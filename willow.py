@@ -1,3 +1,7 @@
+#prints basic instructions
+print("Welcome to the Snyk Vulnerability DB API Search Tool")
+print("To use this tool, type in which package or vulnerability you are looking for")
+
 #pulls dependancies into the script
 import requests
 import json
@@ -16,3 +20,6 @@ def jprint(obj):
 
 #prints results of our json    
 jprint(response.json())
+
+#prints end of query
+print("Query complete. Results found above!")
